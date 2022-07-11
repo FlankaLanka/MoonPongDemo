@@ -1,0 +1,65 @@
+{
+    "MoveToBall": {
+        "checkpoints": [
+            {
+                "steps": 323610,
+                "file_path": "results/ppo/MoveToBall/MoveToBall-323610.onnx",
+                "reward": -1.0,
+                "creation_time": 1657519691.236664,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveToBall/MoveToBall-323610.pt"
+                ]
+            },
+            {
+                "steps": 499997,
+                "file_path": "results/ppo/MoveToBall/MoveToBall-499997.onnx",
+                "reward": 0.37142857142857144,
+                "creation_time": 1657520182.816393,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveToBall/MoveToBall-499997.pt"
+                ]
+            },
+            {
+                "steps": 500006,
+                "file_path": "results/ppo/MoveToBall/MoveToBall-500006.onnx",
+                "reward": 0.3888888888888889,
+                "creation_time": 1657520182.858019,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveToBall/MoveToBall-500006.pt"
+                ]
+            },
+            {
+                "steps": 500006,
+                "file_path": "results/ppo/MoveToBall/MoveToBall-500006.onnx",
+                "reward": null,
+                "creation_time": 1657520321.463149,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveToBall/MoveToBall-500006.pt"
+                ]
+            },
+            {
+                "steps": 500006,
+                "file_path": "results/ppo/MoveToBall/MoveToBall-500006.onnx",
+                "reward": null,
+                "creation_time": 1657520885.5195,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveToBall/MoveToBall-500006.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500006,
+            "file_path": "results/ppo/MoveToBall.onnx",
+            "reward": null,
+            "creation_time": 1657520885.5195,
+            "auxillary_file_paths": [
+                "results/ppo/MoveToBall/MoveToBall-500006.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.8.1"
+    }
+}

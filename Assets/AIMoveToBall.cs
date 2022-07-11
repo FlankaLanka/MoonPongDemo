@@ -9,6 +9,7 @@ public class AIMoveToBall : Agent
 {
     [SerializeField] private GameObject ball;
     [SerializeField] private float moveSpeed = 0.05f;
+    [SerializeField] private GameObject endEpisodeResultColor;
 
     public override void OnEpisodeBegin()
     {
@@ -31,8 +32,11 @@ public class AIMoveToBall : Agent
         {
             discrete[0] = 1;
         }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            discrete[0] = 2;
+        }
+        else
         {
             discrete[0] = 0;
         }
@@ -43,13 +47,17 @@ public class AIMoveToBall : Agent
     {
         //Debug.Log(actions.DiscreteActions[0]);
 
-        if(actions.DiscreteActions[0] == 0) //move down
+        if (actions.DiscreteActions[0] == 2) //move down
         {
             transform.localPosition += new Vector3(0, -moveSpeed, 0) * Time.deltaTime;
         }
-        else //move up
+        else if (actions.DiscreteActions[0] == 1) //move up
         {
             transform.localPosition += new Vector3(0, moveSpeed, 0) * Time.deltaTime;
+        }
+        else if (actions.DiscreteActions[0] == 0)
+        {
+            //don't move
         }
     }
 
@@ -58,6 +66,7 @@ public class AIMoveToBall : Agent
         if(collision.gameObject.name == "Topwall" || collision.gameObject.name == "Bottomwall")
         {
             SetReward(-0.5f);
+            endEpisodeResultColor.GetComponent<SpriteRenderer>().color = Color.red;
             EndEpisode();
         }
     }

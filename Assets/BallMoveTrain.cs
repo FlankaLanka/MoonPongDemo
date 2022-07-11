@@ -6,6 +6,7 @@ public class BallMoveTrain : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private AIMoveToBall aiBrain;
+    [SerializeField] private GameObject endEpisodeResultColor;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     private void Start()
@@ -34,12 +35,14 @@ public class BallMoveTrain : MonoBehaviour
         if(collision.gameObject.name == "AI")
         {
             aiBrain.SetReward(1f);
+            endEpisodeResultColor.GetComponent<SpriteRenderer>().color = Color.green;
             aiBrain.EndEpisode();
         }
 
         if(collision.gameObject.name == "Rightwall")
         {
             aiBrain.SetReward(-1f);
+            endEpisodeResultColor.GetComponent<SpriteRenderer>().color = Color.red;
             aiBrain.EndEpisode();
         }
     }

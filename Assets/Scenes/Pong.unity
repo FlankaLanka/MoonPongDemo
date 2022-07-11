@@ -2014,7 +2014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270.8, y: -117.3}
+  m_AnchoredPosition: {x: -270.8, y: 45}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622310340
@@ -4856,6 +4856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 989297448}
+  isLocal: 0
 --- !u!1 &1285378093
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,6 +11784,7 @@ GameObject:
   - component: {fileID: 1922304341}
   - component: {fileID: 1922304342}
   - component: {fileID: 1922304345}
+  - component: {fileID: 1922304346}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -11884,6 +11886,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1922304332}
   commandList:
+  - {fileID: 1922304346}
   - {fileID: 1922304344}
   - {fileID: 1922304338}
   - {fileID: 1922304339}
@@ -11922,7 +11925,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1922304333}
   selectedCommands:
-  - {fileID: 1922304345}
+  - {fileID: 1922304346}
   variables:
   - {fileID: 1922304336}
   - {fileID: 1922304341}
@@ -12713,6 +12716,21 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1922304346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922304329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  sayDialog: {fileID: 11488894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
 --- !u!1 &1930364489
 GameObject:
   m_ObjectHideFlags: 0

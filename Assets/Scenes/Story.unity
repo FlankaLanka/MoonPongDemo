@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14126136}
   m_Layer: 0
-  m_Name: StartingPosRocket
+  m_Name: EndPosRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14126135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.04, y: -1.9, z: -0.009468982}
+  m_LocalPosition: {x: -5.2, y: -0, z: -0.009468982}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1652,10 +1652,10 @@ GameObject:
   - component: {fileID: 1799347621}
   - component: {fileID: 1799347622}
   - component: {fileID: 1799347623}
-  - component: {fileID: 1799347624}
   - component: {fileID: 1799347625}
   - component: {fileID: 1799347626}
   - component: {fileID: 1799347627}
+  - component: {fileID: 1799347628}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1799347591}
   commandList:
   - {fileID: 1799347595}
-  - {fileID: 1799347624}
+  - {fileID: 1799347628}
   - {fileID: 1799347625}
   - {fileID: 1799347590}
   - {fileID: 1799347596}
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   storyText: NNNNNNNNN-NANI?!?!?!?!?!?
   description: 
   character: {fileID: 1121027223}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 024729dd5c11e4f7ab246b7287746df0, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2578,48 +2578,9 @@ MonoBehaviour:
   isLocal: 0
   axis: 0
   amountOLD: {x: 0, y: 0, z: 0}
---- !u!114 &1799347624
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799347589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ca001b90bd14834b7268b48a44c6de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 32
-  indentLevel: 0
-  _targetObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1808856013}
-  _tweenName:
-    stringRef: {fileID: 0}
-    stringVal: 
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  easeType: 2
-  loopType: 0
-  stopPreviousTweens: 0
-  waitUntilFinished: 1
-  targetObjectOLD: {fileID: 0}
-  tweenNameOLD: 
-  durationOLD: 0
-  _fromTransform:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 14126136}
-  _fromPosition:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
-  isLocal: 0
-  fromTransformOLD: {fileID: 0}
-  fromPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1799347625
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2649,12 +2610,12 @@ MonoBehaviour:
   durationOLD: 0
   _offset:
     vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 206}
+    vector3Val: {x: 0, y: 0, z: 216}
   space: 1
   offsetOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1799347626
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2675,7 +2636,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1799347627
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2701,6 +2662,45 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1799347628
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799347589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445c07472dafe4e0ead0e88c4b757401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1808856013}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  easeType: 2
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _toTransform:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 14126136}
+  _toPosition:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+  isLocal: 0
+  toTransformOLD: {fileID: 0}
+  toPositionOLD: {x: 0, y: 0, z: 0}
 --- !u!1 &1808856013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808856013}
   m_LocalRotation: {x: 0, y: 0, z: 0.9743701, w: 0.22495107}
-  m_LocalPosition: {x: -4.32, y: 0.27, z: 0}
+  m_LocalPosition: {x: -12.33, y: -1.69, z: 0}
   m_LocalScale: {x: 0.2931645, y: 0.2355885, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -170,7 +170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &229424401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -596,11 +596,11 @@ RectTransform:
   m_Children:
   - {fileID: 1746346376}
   m_Father: {fileID: 815768798}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.2107, y: -1.0421}
+  m_AnchoredPosition: {x: 201.7, y: 4.3}
   m_SizeDelta: {x: 241.0796, y: 143.3539}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727755542
@@ -789,8 +789,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1996561164}
-  - {fileID: 1917543807}
   - {fileID: 727755541}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -859,7 +857,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a3b16ff7bb2274e5b8a6c44af1e189b5, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9479666, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1452,7 +1450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save the world (takes you to editor not actual game tho)
+  m_text: Save the Moon! (takes you to editor not actual game tho)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1656,6 +1654,8 @@ GameObject:
   - component: {fileID: 1799347623}
   - component: {fileID: 1799347624}
   - component: {fileID: 1799347625}
+  - component: {fileID: 1799347626}
+  - component: {fileID: 1799347627}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1753,10 +1753,12 @@ MonoBehaviour:
   - {fileID: 1799347613}
   - {fileID: 1799347612}
   - {fileID: 1799347614}
+  - {fileID: 1799347626}
   - {fileID: 1799347616}
   - {fileID: 1799347620}
   - {fileID: 1799347619}
   - {fileID: 1799347618}
+  - {fileID: 1799347627}
   - {fileID: 1799347617}
   - {fileID: 1799347621}
   - {fileID: 1799347622}
@@ -1789,7 +1791,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1799347592}
   selectedCommands:
-  - {fileID: 1799347625}
+  - {fileID: 1799347605}
   variables: []
   description: 
   stepPause: 0
@@ -2087,7 +2089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: NANI?!?!?!?!?!?
+  storyText: NNNNNNNNN-NANI?!?!?!?!?!?
   description: 
   character: {fileID: 1121027223}
   portrait: {fileID: 0}
@@ -2196,7 +2198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: Everyone Attention! We have a signal from our hacker Sam.
+  storyText: Everyone Attention! We have a signal from our infiltrator Sam.
   description: 
   character: {fileID: 1822671461}
   portrait: {fileID: 21300000, guid: ecbd0dfb5155f4b8d8e8b998b2c268f6, type: 3}
@@ -2279,8 +2281,8 @@ MonoBehaviour:
   itemId: 20
   indentLevel: 0
   storyText: bzzz... Yes, Mr. Head of Moon Defense Operation's (Not Moon Creative
-    Lab) engineering team. Infiltration success! I have control of Noom spacecraft
-    XD-69. bzzz...
+    Lab) engineering team. Mission success! I have control of Noom spacecraft XD-69.
+    All aliens here eliminated. bzzz...
   description: 
   character: {fileID: 563178499}
   portrait: {fileID: 21300000, guid: 54e9c7465a6994ff198886e2dd5de9ac, type: 3}
@@ -2389,7 +2391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: Looks like this is it folks.
+  storyText: '*Picks up XBox controller* Looks like this is it folks.'
   description: 
   character: {fileID: 253106178}
   portrait: {fileID: 0}
@@ -2417,7 +2419,7 @@ MonoBehaviour:
   itemId: 27
   indentLevel: 0
   storyText: Yes, Mr. Head of Moon Defense Operation's (Not Moon Creative Lab) engineering
-    team.
+    team. Let me connect you virtually.
   description: 
   character: {fileID: 563178499}
   portrait: {fileID: 21300000, guid: 54e9c7465a6994ff198886e2dd5de9ac, type: 3}
@@ -2444,7 +2446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: Sam, hand me control of spacecraft PONGXD-69.
+  storyText: Sam, give me control of spacecraft PONGXD-69.
   description: 
   character: {fileID: 253106178}
   portrait: {fileID: 21300000, guid: 5714d5a1fbe9642daba1d4c9ce329bce, type: 3}
@@ -2650,6 +2652,55 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 206}
   space: 1
   offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &1799347626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799347589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 229424400}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1799347627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799347589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: Connected. It's movements are now linked to the Xbox controller in the
+    rocket.
+  description: 
+  character: {fileID: 563178499}
+  portrait: {fileID: 21300000, guid: 54e9c7465a6994ff198886e2dd5de9ac, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1808856013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,158 +2838,6 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
---- !u!1 &1917543806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1917543807}
-  - component: {fileID: 1917543809}
-  - component: {fileID: 1917543808}
-  m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1917543807
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917543806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 815768798}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367, y: 200}
-  m_SizeDelta: {x: 255.6908, y: 173.5644}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1917543808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917543806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c560e50fa06cb4258a2251d0fee3bda7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1917543809
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917543806}
-  m_CullTransparentMesh: 1
---- !u!1 &1996561163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1996561164}
-  - component: {fileID: 1996561166}
-  - component: {fileID: 1996561165}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1996561164
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996561163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 815768798}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000027657, y: 0.0012237}
-  m_SizeDelta: {x: 800, y: 500.15}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1996561165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996561163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ddcac1fac1f5c8943a30c2ef6b724062, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1996561166
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996561163}
-  m_CullTransparentMesh: 1
 --- !u!1001 &2077201675
 PrefabInstance:
   m_ObjectHideFlags: 0

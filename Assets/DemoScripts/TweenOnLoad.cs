@@ -26,7 +26,7 @@ public class TweenOnLoad : MonoBehaviour
                 Linear();
                 break;
             case 2:
-                LinearPP();
+                LinearPlus();
                 break;
             case 3:
                 Bouncy();
@@ -54,7 +54,7 @@ public class TweenOnLoad : MonoBehaviour
         ai.transform.DOLocalMove(new Vector2(ai.transform.localPosition.x, 0), cycleLength);
     }
 
-    private void LinearPP()
+    private void LinearPlus()
     {
         cycleLength = 2f;
         ball.transform.localPosition = new Vector2(0, 0.318f);

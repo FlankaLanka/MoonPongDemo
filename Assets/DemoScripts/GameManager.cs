@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private Vector3 mainCamStartingPos;
     public bool gameStarted = false;
 
+    [SerializeField] private GameObject StorySun;
     [SerializeField] private GameObject StoryScreen;
     public bool canStory = false;
 
@@ -101,5 +102,13 @@ public class GameManager : MonoBehaviour
     public void ToggleStory()
     {
         canStory = !canStory;
+        if (canStory)
+        {
+            StorySun.SetActive(true);
+        }
+        else
+        {
+            StorySun.SetActive(false);
+        }
     }
 }

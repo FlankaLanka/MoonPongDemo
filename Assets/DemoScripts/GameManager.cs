@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
             ball.GetComponent<BallMovement>().BallStop();
             ball.GetComponent<BallMovement>().enabled = false;
             AI.GetComponent<AIMovement>().enabled = false;
+            AI.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             ResetPositions();
         }
     }

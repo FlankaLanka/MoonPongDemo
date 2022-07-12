@@ -10,6 +10,8 @@ public class TweenOnLoad : MonoBehaviour
     [SerializeField] private GameObject ball;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject ai;
+    [SerializeField] private GameObject topwall;
+    [SerializeField] private GameObject bottomwall;
 
     public void TweenSet(int val)
     {
@@ -24,12 +26,15 @@ public class TweenOnLoad : MonoBehaviour
                 Linear();
                 break;
             case 2:
-                Bouncy();
+                LinearPP();
                 break;
             case 3:
-                LessBouncy();
+                Bouncy();
                 break;
             case 4:
+                LessBouncy();
+                break;
+            case 5:
                 Jump();
                 break;
             default:
@@ -47,6 +52,21 @@ public class TweenOnLoad : MonoBehaviour
         ball.transform.DOLocalMove(new Vector2(ball.transform.localPosition.x, 0), cycleLength);
         player.transform.DOLocalMove(new Vector2(player.transform.localPosition.x, 0), cycleLength);
         ai.transform.DOLocalMove(new Vector2(ai.transform.localPosition.x, 0), cycleLength);
+    }
+
+    private void LinearPP()
+    {
+        cycleLength = 2f;
+        ball.transform.localPosition = new Vector2(0, 0.318f);
+        player.transform.localPosition = new Vector2(-0.479f, 0.318f);
+        ai.transform.localPosition = new Vector2(0.479f, 0.318f);
+        topwall.transform.localPosition = new Vector2(10f, 3f);
+        bottomwall.transform.localPosition = new Vector2(-10f, -3f);
+        ball.transform.DOLocalMove(new Vector2(ball.transform.localPosition.x, 0), cycleLength);
+        player.transform.DOLocalMove(new Vector2(player.transform.localPosition.x, 0), cycleLength);
+        ai.transform.DOLocalMove(new Vector2(ai.transform.localPosition.x, 0), cycleLength);
+        topwall.transform.DOLocalMove(new Vector2(0, topwall.transform.localPosition.y), cycleLength);
+        bottomwall.transform.DOLocalMove(new Vector2(0, bottomwall.transform.localPosition.y), cycleLength);
     }
 
     private void Bouncy()

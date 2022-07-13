@@ -1656,6 +1656,7 @@ GameObject:
   - component: {fileID: 1799347626}
   - component: {fileID: 1799347627}
   - component: {fileID: 1799347628}
+  - component: {fileID: 1799347629}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1736,6 +1737,7 @@ MonoBehaviour:
   - {fileID: 1799347590}
   - {fileID: 1799347596}
   - {fileID: 1799347604}
+  - {fileID: 1799347629}
   - {fileID: 1799347603}
   - {fileID: 1799347602}
   - {fileID: 1799347601}
@@ -1791,7 +1793,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1799347592}
   selectedCommands:
-  - {fileID: 1799347605}
+  - {fileID: 1799347602}
   variables: []
   description: 
   stepPause: 0
@@ -2034,8 +2036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: That's right. You are the newest recruit we've just awoken from cryogenic
-    sleep.
+  storyText: But that's right. You are the newest recruit we've just awoken from
+    cryogenic sleep.
   description: 
   character: {fileID: 253106178}
   portrait: {fileID: 21300000, guid: 5714d5a1fbe9642daba1d4c9ce329bce, type: 3}
@@ -2062,7 +2064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Uh, what are Noomions?
+  storyText: Uh, what are Noomions? Also, why is our ship traveling backwards?
   description: 
   character: {fileID: 1121027223}
   portrait: {fileID: 21300000, guid: 024729dd5c11e4f7ab246b7287746df0, type: 3}
@@ -2701,6 +2703,34 @@ MonoBehaviour:
   isLocal: 0
   toTransformOLD: {fileID: 0}
   toPositionOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &1799347629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799347589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: Haha, our propulsion engineer Wilson takes reverse engineering quite
+    seriously.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1808856013
 GameObject:
   m_ObjectHideFlags: 0

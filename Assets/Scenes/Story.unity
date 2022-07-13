@@ -1793,7 +1793,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1799347592}
   selectedCommands:
-  - {fileID: 1799347602}
+  - {fileID: 1799347629}
   variables: []
   description: 
   stepPause: 0
@@ -2720,8 +2720,8 @@ MonoBehaviour:
   storyText: Haha, our propulsion engineer Wilson takes reverse engineering quite
     seriously.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 253106178}
+  portrait: {fileID: 21300000, guid: 5714d5a1fbe9642daba1d4c9ce329bce, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1

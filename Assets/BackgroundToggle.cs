@@ -19,6 +19,7 @@ public class BackgroundToggle : MonoBehaviour
             backgroundInStart.SetActive(true);
             backgroundInStory.SetActive(true);
             backgroundInDemo.SetActive(true);
+            this.GetComponent<SpriteRenderer>().enabled = false;
         }
         else
         {
@@ -26,6 +27,7 @@ public class BackgroundToggle : MonoBehaviour
             backgroundInStart.SetActive(false);
             backgroundInStory.SetActive(false);
             backgroundInDemo.SetActive(false);
+            this.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }
